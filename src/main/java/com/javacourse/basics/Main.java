@@ -4,14 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int contatore = 2;
+        for (int i = 1; i <= 10; i++) {
 
-        while (contatore <= 20) {
-
-
-            System.out.print(contatore + " ");
-
-            contatore+= 2;
+            System.out.println("5 * " + i + " = " + (5 * i));
 
         }
 
