@@ -1,16 +1,18 @@
 package com.javacourse.basics;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
+        ArrayList<String>nomi = new ArrayList<>();
+        nomi.add("Ver");
+        nomi.add("Alice");
+        nomi.add("Linda");
+        nomi.add("sami");
 
-        int[] numeri = {10, 20, 30, 4, 50};
-
-
-       for(int i = numeri.length-1; i>=0;i--){
-
-            System.out.println(numeri[i]);
-
+        for(String name: nomi){
+            System.out.println(name);
         }
 
 
