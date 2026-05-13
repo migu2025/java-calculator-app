@@ -4,23 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int[] numeri = {10, 20, 30, 4, 50};
 
-        String[] nomi = {"Jacy", "Sabri", "Ver", "Alice"};
 
-        String nomeDaCercare = "Linda";
+       for(int i = numeri.length-1; i>=0;i--){
 
-        boolean trovato = false;
+            System.out.println(numeri[i]);
 
-        for (String nome : nomi) {
-
-            if (nome.equals(nomeDaCercare)) {
-
-                trovato = true;
-
-            }
         }
 
-        System.out.println("Nome trovato? " + trovato);
 
     }
 
