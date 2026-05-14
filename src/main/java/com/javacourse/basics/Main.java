@@ -23,9 +23,8 @@ public class Main {
         persone.add(persona3);
 
         for (Persona persona : persone) {
-            persona.saluta();
-            persona.mostraEta();
-            persona.mostraLavoro();
+            System.out.println(persona);
+
 
             System.out.println();
         }

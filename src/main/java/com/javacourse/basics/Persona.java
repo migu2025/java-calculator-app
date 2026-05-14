@@ -11,6 +11,15 @@ public class Persona {
         return lavoro;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nome:'" + nome + '\'' +
+                ", eta:" + eta +
+                ", lavoro:'" + lavoro + '\'' +
+                '}';
+    }
+
     public void setLavoro(String lavoro) {
         this.lavoro = lavoro;
     }
