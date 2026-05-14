@@ -1,18 +1,25 @@
 package com.javacourse.basics;
 
+
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<String>nomi = new ArrayList<>();
-        nomi.add("Ver");
-        nomi.add("Alice");
-        nomi.add("Linda");
-        nomi.add("sami");
+        Persona persona1 = new Persona("Sabri Cami", 40, "RH");
+        Persona persona2 = new Persona("Ver minsk", 44, "Backoffice");
+        Persona persona3 = new Persona("Alice", 43, "Secretary");
 
-        for(String name: nomi){
-            System.out.println(name);
+
+        ArrayList<Persona> persone = new ArrayList<>();
+        persone.add(persona1);
+        persone.add(persona2);
+        persone.add(persona3);
+
+        for (Persona persona : persone) {
+            persona.saluta();
+            persona.mostraEta();
+            persona.mostraLavoro();
         }
 
 
