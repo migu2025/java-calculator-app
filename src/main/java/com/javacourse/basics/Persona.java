@@ -3,9 +3,35 @@ package com.javacourse.basics;
 
 
 public class Persona {
-    String nome;
-    int eta;
-    String lavoro;
+    private String nome;
+    private int eta;
+    private String lavoro;
+
+    public String getLavoro() {
+        return lavoro;
+    }
+
+    public void setLavoro(String lavoro) {
+        this.lavoro = lavoro;
+    }
+
+    public int getEta() {
+        return eta;
+    }
+
+    public void setEta(int eta) {
+        this.eta = eta;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
 
     public Persona(String nome, int eta, String lavoro) {
         this.nome = nome;
