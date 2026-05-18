@@ -27,7 +27,8 @@ public class Main {
             System.out.println("1. Mostra persone");
             System.out.println("2. Cerca persona");
             System.out.println("3. Elimina persona");
-            System.out.println("4. Esci");
+            System.out.println("4. Aggiungi persona");
+            System.out.println("5. Esci");
             scelta = scanner.nextInt();
             scanner.nextLine();
 
@@ -77,7 +78,33 @@ public class Main {
 
                     break;
 
+
+
+
                 case 4:
+
+                    System.out.println("Inserisci nome:");
+                    String nuovoNome = scanner.nextLine();
+
+                    System.out.println("Inserisci età:");
+                    int nuovaEta = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Inserisci lavoro:");
+                    String nuovoLavoro = scanner.nextLine();
+
+                    Persona nuovaPersona = new Persona(
+                            nuovoNome,
+                            nuovaEta,
+                            nuovoLavoro
+                    );
+
+                    persone.add(nuovaPersona);
+
+                    System.out.println("Persona aggiunta con successo!");
+
+                    break;
+                case 5:
 
                     System.out.println("Uscita programma");
 
@@ -88,7 +115,7 @@ public class Main {
                     System.out.println("Scelta non valida");
             }
 
-        } while (scelta != 4);
+        } while (scelta != 6);
 
         scanner.close();
 
